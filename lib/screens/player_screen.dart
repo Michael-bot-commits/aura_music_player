@@ -46,11 +46,12 @@ class _PlayerScreenState extends State<PlayerScreen> {
           Positioned.fill(
             child: AnimatedSwitcher(
               duration: Motion.dynamicColor,
-              child: Image(
+              child: SizedBox.expand(
                 key: ValueKey(track.art),
-                image: artProvider(track.art),
-                fit: BoxFit.cover,
-                // blur via an ImageFiltered wrapper below
+                child: Image(
+                  image: artProvider(track.art),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
@@ -132,7 +133,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
     );
   }
 
-  Widget _centre(PlayerModel player, track) {
+  Widget _centre(PlayerModel player, Track track) {
     switch (_view) {
       case CentreView.cover:
         return Center(
