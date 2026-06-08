@@ -1,10 +1,10 @@
 # music_player
-
+The goal of this application was simple: I wanted a way to not only stream music and audio content but also have a free, ad-free tool to download various media formats (such as MP3 and MP4 videos). The application provides easy access to local files through a structured library, an interactive and straightforward media player, and a discovery section designed to find new artists and songs.
 A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
